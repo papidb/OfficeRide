@@ -3,7 +3,7 @@ import { View, StyleSheet, Dimensions, Text, TouchableOpacity } from 'react-nati
 import QRCode from 'react-native-qrcode-svg';
 import { colors, theme } from '../constants'
 import Circle from './Circle'
-
+import QrTicket from './QrTicket'
 
 const BusStatus = (props) => {
     return (
@@ -12,32 +12,7 @@ const BusStatus = (props) => {
         </TouchableOpacity>
     )
 }
-const QrTicket = (props) => {
-    return (
-        <TouchableOpacity style={styles.qrCode}>
-            <View style={{
-                backgroundColor: colors.white,
-                justifyContent: 'center',
-                flex: 1,
-                height: '100%'
-            }
-            }>
-                <View style={{ alignItems: 'center' }}>
-                    <QRCode
-                        value='Help my life, I need a Job, https://github.com/benjamin-daniel'
-                        size={50}
-                        bgColor='purple'
-                        fgColor='white'
-                        color={colors.qrColor}
-                    />
-                </View>
 
-                <Text style={{ textAlign: 'center', fontSize: 14 }}>View Ticket</Text>
-
-            </View>
-        </TouchableOpacity>
-    )
-}
 function Address({ children, borderBottom }) {
     return (
         <View style={([
