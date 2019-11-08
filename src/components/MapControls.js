@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { View, StyleSheet, Dimensions, Text, TouchableOpacity } from 'react-native'
 import QRCode from 'react-native-qrcode-svg';
 import { colors, theme } from '../constants'
+import Circle from './Circle'
+
 
 const BusStatus = (props) => {
     return (
@@ -15,6 +17,7 @@ const QrTicket = (props) => {
         <TouchableOpacity style={styles.qrCode}>
             <View style={{
                 backgroundColor: colors.white,
+                justifyContent: 'center',
                 flex: 1,
                 height: '100%'
             }
@@ -52,7 +55,14 @@ function Address({ children, borderBottom }) {
 const AddressToAndFro = (props) => {
     return (
         <View style={styles.addressToAndFro}>
-            <View><Text>0 - 0</Text></View>
+            <View style={{ width: 30, alignItems: 'center', justifyContent: 'space-between', paddingVertical: 20 }}>
+                <Circle size={16} innerCircle={6} color="#6772E5" />
+                <Circle size={2} />
+                <Circle size={2} />
+                <Circle size={2} />
+                <Circle size={2} />
+                <Circle size={16} innerCircle={6} color="#24B47E" />
+            </View>
             <View style={{ flex: 1 }}>
                 <Address borderBottom>
                     <Text>Ajah</Text>
@@ -61,6 +71,7 @@ const AddressToAndFro = (props) => {
                     <Text>Ikorodu</Text>
                 </Address>
             </View>
+            <View style={{ width: 10 }} />
         </View>
     )
 }
@@ -84,7 +95,7 @@ export default MapControls
 
 const styles = StyleSheet.create({
     container: {
-        flex: 0.2,
+        flex: 0.25,
         flexDirection: 'column',
         padding: 10,
         flexWrap: 'wrap',
