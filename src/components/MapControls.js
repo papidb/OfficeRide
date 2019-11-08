@@ -41,7 +41,7 @@ const QrTicket = (props) => {
 function Address({ children, borderBottom }) {
     return (
         <View style={([
-            { flex: 1, justifyContent: 'space-around' },
+            { flex: 1 },
             borderBottom ? {
                 borderBottomWidth: 1,
                 borderBottomColor: colors.qrColor,
@@ -65,10 +65,14 @@ const AddressToAndFro = (props) => {
             </View>
             <View style={{ flex: 1 }}>
                 <Address borderBottom>
-                    <Text>Ajah</Text>
+                    <TouchableOpacity style={{ flex: 1, justifyContent: 'space-around' }}>
+                        <Text>Ajah</Text>
+                    </TouchableOpacity>
                 </Address>
                 <Address>
-                    <Text>Ikorodu</Text>
+                    <TouchableOpacity style={{ flex: 1, justifyContent: 'space-around' }}>
+                        <Text>Ikorodu</Text>
+                    </TouchableOpacity>
                 </Address>
             </View>
             <View style={{ width: 10 }} />
