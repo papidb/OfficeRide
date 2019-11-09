@@ -22,8 +22,8 @@ class Map extends Component {
                             style={styles.map}
                         >
                             <MapboxGL.Camera
-                                zoomLevel={18}
-                                centerCoordinate={[3.3886, 6.5151]}
+                                zoomLevel={12}
+                                centerCoordinate={[3.3886105623437857, 6.513158357075099]}
                             />
                         </MapboxGL.MapView>
                     </View>
