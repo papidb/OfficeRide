@@ -14,15 +14,27 @@
   },
   "dependencies": {
     "@react-native-mapbox-gl/maps": "^7.0.8",
+    "mapbox": "^1.0.0-beta10",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-dotenv": "^0.2.0",
+    "react-native-gesture-handler": "^1.5.0",
     "react-native-modal": "^11.5.3",
     "react-native-qrcode": "https://github.com/wanxsb/react-native-qrcode",
     "react-native-qrcode-svg": "^5.3.2",
+    "react-native-reanimated": "^1.4.0",
     "react-native-svg": "^9.13.3",
-    "react-native-webview": "^7.4.3"
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "^7.4.3",
+    "react-navigation": "^4.0.10",
+    "react-navigation-drawer": "^2.3.3",
+    "react-navigation-stack": "^1.10.3",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.1",
+    "redux-form": "^8.2.2",
+    "redux-persist": "^4.6.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",

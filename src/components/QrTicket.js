@@ -67,7 +67,6 @@ const QRTicketModal = ({ isVisible, setVisible, ...props }) => {
 
 const QrTicket = (props) => {
     const [isVisible, setVisible] = useState(false)
-    console.log({ isVisible })
 
     return (
         <TouchableOpacity

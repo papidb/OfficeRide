@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         padding: 10,
         flexWrap: 'wrap',
+        marginBottom: 30,
         // alignItems: 'flex-end',
     },
     busStatus: {

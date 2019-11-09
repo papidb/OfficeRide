@@ -11,23 +11,25 @@ import {
 
 import Map from './src/components/Map'
 import MapControls from './src/components/MapControls.js'
+import Nav from './src/navigation/Nav'
+
 
 function SetCustomText(customProps) {
-    const TextRender = Text.render
-    const initialDefaultProps = Text.defaultProps
-    Text.defaultProps = {
-        ...initialDefaultProps,
-        ...customProps
+  const TextRender = Text.render
+  const initialDefaultProps = Text.defaultProps
+  Text.defaultProps = {
+    ...initialDefaultProps,
+    ...customProps
+  }
+  Text.render = function render(props) {
+    let oldProps = props
+    props = { ...props, style: [customProps.style, props.style] }
+    try {
+      return TextRender.apply(this, arguments)
+    } finally {
+      props = oldProps
     }
-    Text.render = function render(props) {
-        let oldProps = props
-        props = { ...props, style: [customProps.style, props.style] }
-        try {
-            return TextRender.apply(this, arguments)
-        } finally {
-            props = oldProps
-        }
-    }
+  }
 }
 
 const customTextProps = {
@@ -45,10 +47,9 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{ flex: 1 }}>
-        <Map />
-        <MapControls />
-      </SafeAreaView>
+      {/* <SafeAreaView style={{ flex: 1 }}> */}
+        <Nav />
+      {/* </SafeAreaView> */}
     </>
   );
 };

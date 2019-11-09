@@ -3,5 +3,6 @@ export default {
     white: '#FFFFFF',
     qrColor: "#686974",
     greyed: '#CCCCCC',
-    modal: "#151515"
+    modal: "#151515",
+    drawerIcon: "#8B8C95",
 }
