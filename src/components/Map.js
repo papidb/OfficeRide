@@ -17,7 +17,7 @@ class Map extends Component {
                 <View style={styles.page}>
                     <View style={styles.container}>
                         <MapboxGL.MapView
-                            // styleURL={'mapbox://styles/benjamin-daniel/ck2q8g3911pk61cqun7khpq6q'}
+                            styleURL={'mapbox://styles/benjamin-daniel/ck2q8g3911pk61cqun7khpq6q'}
                             ref={(ref) => this._map = ref}
                             style={styles.map}
                         >

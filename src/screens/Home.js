@@ -11,7 +11,7 @@ let radius = 30
 
 const Home = ({ navigation, ...props }) => {
     useEffect(() => {
-        // navigation.openDrawer()
+        // navigation.navigate("AddCard")
     }, [])
     return (
         <View style={{ flex: 1 }}>

@@ -5,4 +5,5 @@ export default {
     greyed: '#CCCCCC',
     modal: "#151515",
     drawerIcon: "#8B8C95",
+    body: '#FAFBFF'
 }

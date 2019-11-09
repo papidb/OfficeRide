@@ -149,6 +149,7 @@ export default createDrawerNavigator({
                 flex: 1,
                 marginVertical: 10,
             }
-        }
+        },
+        // initialRouteName: 'Payment'
     }
 );
