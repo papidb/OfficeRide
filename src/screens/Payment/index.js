@@ -16,7 +16,7 @@ class Payment extends React.Component {
             headerRight: () => (
                 <TouchableOpacity
                     onPress={() => navigation.navigate("AddCard")}>
-                    <Text style={{ padding: 10, marginRight: 30, fontSize: 14, color: colors.mainBlue, fontWeight: '500', }}>Add Card</Text>
+                    <Text style={{ padding: 10, marginRight: 10, fontSize: 14, color: colors.mainBlue, fontWeight: '500', }}>Add Card</Text>
                 </TouchableOpacity>
             ),
             headerLeft: () => (
