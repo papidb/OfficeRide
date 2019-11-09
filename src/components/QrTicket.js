@@ -3,27 +3,7 @@ import { View, StyleSheet, Dimensions, Text, TouchableOpacity } from 'react-nati
 import QRCode from 'react-native-qrcode-svg';
 import { colors, theme } from '../constants'
 import Modal from "react-native-modal";
-
-function Details({ header, text, right, textColor, textSize }) {
-    return (
-        <View>
-            <Text style={([
-                { fontSize: 15 },
-                right ? { textAlign: 'right' } : null
-            ])}>
-                {header}
-            </Text>
-            <Text style={([
-                { fontSize: 15, marginBottom: 5,  fontFamily: 'ProximaNova-Semibold' },
-                right ? { textAlign: 'right' } : null,
-                textColor ? { color: colors.mainBlue } : null,
-                textSize && { fontSize: textSize }
-            ])}>
-                {text}
-            </Text>
-        </View>
-    )
-}
+import Details from './Details'
 
 const QRTicketModal = ({ isVisible, setVisible, ...props }) => {
     return (
